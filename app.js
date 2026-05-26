@@ -1,8 +1,11 @@
+import qrImageUrl from "./assets/wuyu-wechat-qr.png";
+
 const tabs = document.querySelectorAll("[data-tab]");
 const panels = document.querySelectorAll("[data-panel]");
 const modal = document.querySelector("[data-modal-backdrop]");
 const openWechat = document.querySelector("[data-open-wechat]");
 const closeWechat = document.querySelector("[data-close-wechat]");
+const qrImage = document.querySelector("[data-qr-src]");
 const phoneModal = document.querySelector("[data-phone-backdrop]");
 const openPhone = document.querySelector("[data-open-phone]");
 const closePhone = document.querySelector("[data-close-phone]");
@@ -23,7 +26,23 @@ tabs.forEach((tab) => {
   tab.addEventListener("click", () => activatePanel(tab.dataset.tab));
 });
 
+function loadQrImage() {
+  if (!qrImage.hasAttribute("src")) {
+    qrImage.src = qrImageUrl;
+  }
+}
+
+window.addEventListener("load", () => {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(loadQrImage, { timeout: 1500 });
+    return;
+  }
+
+  window.setTimeout(loadQrImage, 600);
+});
+
 openWechat.addEventListener("click", () => {
+  loadQrImage();
   modal.hidden = false;
   closeWechat.focus();
 });

@@ -39,7 +39,15 @@ body::after {
 }
 
 body::before {
-  background: url("./assets/gewu-tech-background.png") center right / cover no-repeat;
+  background-color: #030d22;
+  background-image: url("./assets/gewu-bg-desktop.jpg");
+  background-image: image-set(
+    url("./assets/gewu-bg-desktop.webp") type("image/webp"),
+    url("./assets/gewu-bg-desktop.jpg") type("image/jpeg")
+  );
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body::after {
@@ -150,9 +158,8 @@ button {
   color: #edf5ff;
   border: 1px solid rgba(124, 177, 255, 0.24);
   border-radius: 28px;
-  background: rgba(4, 15, 40, 0.48);
+  background: rgba(4, 15, 40, 0.72);
   box-shadow: 0 26px 65px rgba(0, 7, 25, 0.43);
-  backdrop-filter: blur(5px);
 }
 
 .profile-card {
@@ -299,6 +306,10 @@ button {
   gap: 7px;
   color: #eef5ff;
   text-align: center;
+}
+
+.portrait-picture {
+  display: block;
 }
 
 .portrait {
@@ -638,12 +649,25 @@ button {
   display: grid;
   place-items: center;
   padding: 22px;
-  background: rgba(13, 28, 52, 0.46);
-  backdrop-filter: blur(4px);
+  background: rgba(13, 28, 52, 0.62);
 }
 
 .modal-backdrop[hidden] {
   display: none;
+}
+
+@supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+  .content {
+    background: rgba(4, 15, 40, 0.48);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+
+  .modal-backdrop {
+    background: rgba(13, 28, 52, 0.46);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
 }
 
 .wechat-modal {
@@ -788,7 +812,12 @@ button {
 
 @media (max-width: 760px) {
   body::before {
-    background-position: 73% center;
+    background-image: url("./assets/gewu-bg-mobile.jpg");
+    background-image: image-set(
+      url("./assets/gewu-bg-mobile.webp") type("image/webp"),
+      url("./assets/gewu-bg-mobile.jpg") type("image/jpeg")
+    );
+    background-position: center;
   }
 
   body::after {
@@ -818,6 +847,9 @@ button {
     margin-top: 11px;
     padding: 0 17px 31px;
     border-radius: 21px;
+    background: rgba(4, 15, 40, 0.7);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   .profile-card {
@@ -872,6 +904,12 @@ button {
     width: 100px;
     height: 122px;
     border-radius: 16px;
+  }
+
+  .modal-backdrop {
+    background: rgba(13, 28, 52, 0.68);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   .portrait-panel strong,
