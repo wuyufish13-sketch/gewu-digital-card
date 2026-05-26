@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vite/
+.tools/
+*-preview.png
+assets/wuyu-gewu-contact.vcf
+assets/wuyu-wechat-qr.jpg

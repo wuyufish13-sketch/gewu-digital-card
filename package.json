@@ -1,0 +1,15 @@
+{
+  "name": "gewu-digital-business-card",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Responsive digital business card page for Gewu Technology.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "vite": "^8.0.14"
+  }
+}
