@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/card/card"
+  ],
+  "window": {
+    "navigationBarTitleText": "吴瑜｜格物科技",
+    "navigationBarBackgroundColor": "#071226",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#071226"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

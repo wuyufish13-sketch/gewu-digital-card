@@ -1,0 +1,56 @@
+<view class="page">
+  <view class="brand">
+    <view class="brand-mark">G</view>
+    <view>
+      <view class="brand-name">格物科技</view>
+      <view class="brand-en">GEWU TECHNOLOGY</view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="profile">
+      <view class="eyebrow">GEWU TECHNOLOGY</view>
+      <view class="name">吴瑜</view>
+      <view class="role">格物科技有限公司 <text>|</text> 公司创始人</view>
+      <view class="tags">
+        <text>AI 应用赋能</text>
+        <text>AI 教育服务</text>
+        <text>项目落地支持</text>
+      </view>
+
+      <view class="contact">
+        <view class="contact-row">
+          <text class="dot">☎</text>
+          <text>+86 185 5552 7069</text>
+        </view>
+        <view class="contact-row">
+          <text class="dot">⌖</text>
+          <text>安徽省蚌埠市光彩大市场 9 区 21 栋 23 号</text>
+        </view>
+        <view class="contact-row">
+          <text class="dot">▣</text>
+          <text>企业、教育机构及个人客户业务咨询</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="portrait-wrap">
+      <image class="portrait" src="/assets/portrait.jpg" mode="aspectFill" />
+      <view class="portrait-name">吴瑜</view>
+      <view class="portrait-desc">市场拓展与项目服务</view>
+    </view>
+
+    <view class="actions">
+      <button class="action primary" bindtap="callPhone">电话咨询</button>
+      <button class="action primary" bindtap="previewQr">微信联系</button>
+      <button class="action secondary" open-type="share">发送名片</button>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">关于<text>格物科技</text></view>
+    <view class="section-text">
+      格物科技有限公司是一家专注于 AI 赋能与 AI 教育服务的科技公司，致力于帮助客户把 AI 从“新工具”变成真正可使用、可交付、可变现的生产力系统。
+    </view>
+  </view>
+</view>
