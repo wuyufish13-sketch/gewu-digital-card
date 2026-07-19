@@ -12,7 +12,7 @@ const closePhone = document.querySelector("[data-close-phone]");
 const shareButton = document.querySelector("[data-share-card]");
 const toast = document.querySelector("[data-toast]");
 
-const shareUrl = "https://wuyufish13-sketch.github.io/gewu-digital-card/?v=card-20260719";
+const shareUrl = "https://wuyufish13-sketch.github.io/gewu-digital-card/";
 const shareData = {
   title: "吴瑜",
   text: "格物科技有限公司｜公司创始人",
