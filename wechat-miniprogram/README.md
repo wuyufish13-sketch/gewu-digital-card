@@ -12,7 +12,7 @@
 
 1. 注册微信小程序并获得 AppID。
 2. 用微信开发者工具打开 `wechat-miniprogram` 目录。
-3. 把 `project.config.json` 里的 `appid` 从 `touristappid` 改为正式 AppID。
+3. `project.config.json` 已配置 AppID：`wx437c009e733fdf91`。
 4. 在微信开发者工具里预览、上传，并在微信公众平台提交审核发布。
 
 分享卡片配置在 `pages/card/card.js` 的 `onShareAppMessage`。
