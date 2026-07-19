@@ -335,7 +335,7 @@ button {
 .primary-actions {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   margin-top: 28px;
 }
@@ -346,9 +346,12 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  border: 0;
   border-radius: 9px;
   font-size: 15px;
   font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
   transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
 }
 
@@ -934,7 +937,7 @@ button {
   }
 
   .action-secondary {
-    grid-column: 1 / -1;
+    grid-column: auto;
   }
 
   .company {
